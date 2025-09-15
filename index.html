@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohana Real Estate Marketing - Growing Property Businesses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 font-body">
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 rounded-2xl flex items-center justify-center shadow-lg">
+                        <img src="logo.png" alt="Ohana Logo" class="w-12 h-12 object-contain">
+                    </div>
+                    <div>
+                        <div class="font-display text-2xl font-semibold text-gray-800">Ohana</div>
+                        <div class="text-xs text-gray-500 -mt-1">Real Estate Marketing</div>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Home</a>
+                    <a href="#services" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Services</a>
+                    <a href="#portfolio" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Portfolio</a>
+                    <a href="#results" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Results</a>
+                    <a href="#contact" class="btn-primary text-white px-6 py-3 rounded-full font-medium shadow-lg">
+                        Get More Leads
+                    </a>
+                </div>
+                
+                <button id="menu-toggle" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100">
+            <div class="px-6 py-4 space-y-4">
+                <a href="#home" class="block text-gray-600 hover:text-gray-900 font-medium">Home</a>
+                <a href="#services" class="block text-gray-600 hover:text-gray-900 font-medium">Services</a>
+                <a href="#portfolio" class="block text-gray-600 hover:text-gray-900 font-medium">Portfolio</a>
+                <a href="#results" class="block text-gray-600 hover:text-gray-900 font-medium">Results</a>
+                <a href="#contact" class="block btn-primary text-white px-6 py-3 rounded-full text-center font-medium">Get More Leads</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 pb-32 px-6" style="background: linear-gradient(135deg, #fdf2f0 0%, #f9e8e4 100%);">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal">
+                    <h1 class="font-display text-6xl md:text-7xl font-bold text-gray-900 leading-tight mb-8">
+                        Generate More
+                        <span class="gradient-text">Leads</span>
+                        For Real Estate Pros
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-10 leading-relaxed">
+                        We specialize in lead generation, social media marketing, and website development 
+                        to help real estate agents and brokers grow their business and attract more clients.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                        <button onclick="scrollToSection('contact')" class="btn-primary text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl">
+                            Get More Leads Now
+                        </button>
+                        <button onclick="scrollToSection('portfolio')" class="border-2 text-gray-700 px-8 py-4 rounded-full font-semibold transition-all" style="border-color: #da795e; color: #da795e;" onmouseover="this.style.backgroundColor='#da795e'; this.style.color='white';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#da795e';">
+                            View Success Stories
+                        </button>
+                    </div>
+                    
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary">5,000+</div>
+                            <div class="text-sm text-gray-600">Leads Generated</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary">150+</div>
+                            <div class="text-sm text-gray-600">Websites Built</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary">200+</div>
+                            <div class="text-sm text-gray-600">Happy Agents</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reveal relative">
+                    <div class="relative">
+                        <!-- Marketing Dashboard Card -->
+                        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
+                            <div class="h-64 relative p-6" style="background: linear-gradient(135deg, #da795e 0%, #c86a4f 100%);">
+                                <div class="absolute inset-0 bg-black/10"></div>
+                                <div class="relative z-10 text-white">
+                                    <div class="text-sm opacity-90 mb-2">Marketing Dashboard</div>
+                                    <div class="text-2xl font-bold mb-4">Lead Generation Report</div>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div class="bg-white/20 backdrop-blur-sm rounded-xl p-3">
+                                            <div class="text-lg font-bold">47</div>
+                                            <div class="text-xs opacity-90">New Leads</div>
+                                        </div>
+                                        <div class="bg-white/20 backdrop-blur-sm rounded-xl p-3">
+                                            <div class="text-lg font-bold">12</div>
+                                            <div class="text-xs opacity-90">Appointments</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div>
+                                        <div class="font-semibold text-gray-900">This Month's Results</div>
+                                        <div class="text-sm text-gray-600">Facebook & Google Ads</div>
+                                    </div>
+                                    <div class="text-green-600 font-bold">+300% ROI</div>
+                                </div>
+                                <div class="flex items-center space-x-4 text-sm text-gray-600">
+                                    <span>📧 Email Campaigns</span>
+                                    <span>📱 Social Media</span>
+                                    <span>💻 Website</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating Elements -->
+                        <div class="absolute -top-6 -right-6 floating">
+                            <div class="text-white p-4 rounded-2xl shadow-lg" style="background-color: #da795e;">
+                                <div class="text-2xl font-bold">300%</div>
+                                <div class="text-xs">More Leads</div>
+                            </div>
+                        </div>
+                        
+                        <div class="absolute -bottom-6 -left-6 floating" style="animation-delay: 2s;">
+                            <div class="text-white p-4 rounded-2xl shadow-lg" style="background-color: #b85d42;">
+                                <div class="text-2xl font-bold">24/7</div>
+                                <div class="text-xs">Lead Generation</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20 reveal">
+                <h2 class="font-display text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                    Digital Marketing Services for Real Estate
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We focus on lead generation, social media marketing, and website development to grow your real estate business
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl border reveal" style="background: linear-gradient(135deg, #fdf2f0 0%, #f9e8e4 100%); border-color: #e89b82;">
+                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-lg" style="background-color: #da795e;">
+                        <span class="text-2xl text-white">📧</span>
+                    </div>
+                    <h3 class="font-display text-2xl font-semibold text-gray-900 mb-4">Email Marketing</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Automated email campaigns that nurture leads and keep you top-of-mind with past clients.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li class="flex items-center"><span class="w-2 h-2 rounded-full mr-3" style="background-color: #da795e;"></span>Drip Campaigns</li>
+                        <li class="flex items-center"><span class="w-2 h-2 rounded-full mr-3" style="background-color: #da795e;"></span>Market Updates</li>
+                        <li class="flex items-center"><span class="w-2 h-2 rounded-full mr-3" style="background-color: #da795e;"></span>Lead Nurturing</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-3xl border border-purple-100 reveal">
+                    <div class="w-16 h-16 bg-purple-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                        <span class="text-2xl text-white">📊</span>
+                    </div>
+                    <h3 class="font-display text-2xl font-semibold text-gray-900 mb-4">CRM & Automation</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Streamline your lead management with automated follow-ups and organized client databases.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Lead Management</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Automated Follow-ups</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>Client Database</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-3xl border border-green-100 reveal">
+                    <div class="w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                        <span class="text-2xl text-white">🎯</span>
+                    </div>
+                    <h3 class="font-display text-2xl font-semibold text-gray-900 mb-4">Lead Generation</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Targeted campaigns that bring qualified buyers and sellers directly to your inbox.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Facebook & Instagram Ads</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Google Ads & SEO</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Landing Page Optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-orange-50 to-red-50 p-8 rounded-3xl border border-orange-100 reveal">
+                    <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                        <span class="text-2xl text-white">📱</span>
+                    </div>
+                    <h3 class="font-display text-2xl font-semibold text-gray-900 mb-4">Social Media Marketing</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Build your personal brand and showcase properties across all social platforms.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Content Creation</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Community Management</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>Influencer Partnerships</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-teal-50 to-cyan-50 p-8 rounded-3xl border border-teal-100 reveal">
+                    <div class="w-16 h-16 bg-teal-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                        <span class="text-2xl text-white">💻</span>
+                    </div>
+                    <h3 class="font-display text-2xl font-semibold text-gray-900 mb-4">Website Development</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Professional real estate websites that convert visitors into leads and showcase your expertise.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-teal-400 rounded-full mr-3"></span>IDX Integration</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-teal-400 rounded-full mr-3"></span>Lead Capture Forms</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-teal-400 rounded-full mr-3"></span>Mobile Optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-yellow-50 to-amber-50 p-8 rounded-3xl border border-yellow-100 reveal">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                        <span class="text-2xl text-white">🎥</span>
+                    </div>
+                    <h3 class="font-display text-2xl font-semibold text-gray-900 mb-4">Video Marketing</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Engaging video content that showcases your expertise and builds trust with potential clients.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Agent Introduction Videos</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Market Update Videos</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>Client Testimonials</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24 px-6 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20 reveal">
+                <h2 class="font-display text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                    Client Success Stories
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    See how our marketing services have transformed real estate businesses
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all reveal p-8">
+                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-6" style="background: linear-gradient(135deg, #da795e 0%, #c86a4f 100%);">
+                        <span class="text-2xl text-white">📈</span>
+                    </div>
+                    <h3 class="font-display text-xl font-semibold text-gray-900 mb-4">300% Lead Increase</h3>
+                    <p class="text-gray-600 mb-6">Sarah went from 5 leads per month to 20+ qualified leads through our targeted Facebook campaigns and website optimization.</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center text-sm">👩‍💼</div>
+                        <div>
+                            <div class="font-semibold text-sm">Sarah Martinez</div>
+                            <div class="text-xs text-gray-500">Century 21 Agent</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all reveal p-8">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-2xl text-white">💻</span>
+                    </div>
+                    <h3 class="font-display text-xl font-semibold text-gray-900 mb-4">24/7 Lead Generation</h3>
+                    <p class="text-gray-600 mb-6">Michael's new website generates leads around the clock, bringing in 15+ new prospects weekly without any manual effort.</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-green-400 to-teal-500 rounded-full flex items-center justify-center text-sm">👨‍💼</div>
+                        <div>
+                            <div class="font-semibold text-sm">Michael Chen</div>
+                            <div class="text-xs text-gray-500">Luxury Properties Broker</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all reveal p-8">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-2xl text-white">📱</span>
+                    </div>
+                    <h3 class="font-display text-xl font-semibold text-gray-900 mb-4">Social Media Success</h3>
+                    <p class="text-gray-600 mb-6">Lisa's Instagram following grew from 500 to 5,000+ engaged followers, leading to 3 new listings per month from social media.</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center text-sm">👩‍🦰</div>
+                        <div>
+                            <div class="font-semibold text-sm">Lisa Rodriguez</div>
+                            <div class="text-xs text-gray-500">RE/MAX Agent</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="py-24 px-6 text-white" style="background: linear-gradient(135deg, #da795e 0%, #b85d42 100%);">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20 reveal">
+                <h2 class="font-display text-5xl md:text-6xl font-bold mb-6">
+                    Proven Results That Matter
+                </h2>
+                <p class="text-xl opacity-90 max-w-3xl mx-auto">
+                    Our data-driven approach delivers measurable results for real estate professionals
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div class="text-center reveal">
+                    <div class="text-5xl font-bold mb-2">5,000+</div>
+                    <div class="opacity-80">Leads Generated</div>
+                    <div class="text-sm opacity-70 mt-2">Qualified prospects delivered</div>
+                </div>
+                <div class="text-center reveal">
+                    <div class="text-5xl font-bold mb-2">300%</div>
+                    <div class="opacity-80">ROI Increase</div>
+                    <div class="text-sm opacity-70 mt-2">Average marketing ROI</div>
+                </div>
+                <div class="text-center reveal">
+                    <div class="text-5xl font-bold mb-2">150+</div>
+                    <div class="opacity-80">Websites Built</div>
+                    <div class="text-sm opacity-70 mt-2">Custom real estate sites</div>
+                </div>
+                <div class="text-center reveal">
+                    <div class="text-5xl font-bold mb-2">98%</div>
+                    <div class="opacity-80">Client Satisfaction</div>
+                    <div class="text-sm opacity-70 mt-2">Would recommend us</div>
+                </div>
+            </div>
+            
+            <!-- Testimonials -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-effect rounded-3xl p-8 reveal">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center text-2xl mr-4">
+                            👩‍💼
+                        </div>
+                        <div>
+                            <div class="font-semibold text-lg">Sarah Martinez</div>
+                            <div class="opacity-80 text-sm">Top Producer, Century 21</div>
+                        </div>
+                    </div>
+                    <p class="opacity-90 leading-relaxed">
+                        "Ohana's lead generation system completely transformed my business. I went from struggling to find clients to having 
+                        more qualified leads than I can handle. Their social media and website work is incredible!"
+                    </p>
+                    <div class="flex items-center mt-4 text-yellow-400">
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <span class="ml-2 text-sm opacity-80">5.0 Rating</span>
+                    </div>
+                </div>
+                
+                <div class="glass-effect rounded-3xl p-8 reveal">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-teal-500 rounded-full flex items-center justify-center text-2xl mr-4">
+                            👨‍💼
+                        </div>
+                        <div>
+                            <div class="font-semibold text-lg">Michael Chen</div>
+                            <div class="opacity-80 text-sm">Broker, Luxury Properties Inc</div>
+                        </div>
+                    </div>
+                    <p class="opacity-90 leading-relaxed">
+                        "The website they built for me generates leads 24/7, and their social media management keeps me visible in my market. 
+                        I'm getting referrals from people who found me online - it's amazing!"
+                    </p>
+                    <div class="flex items-center mt-4 text-yellow-400">
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <span class="ml-2 text-sm opacity-80">5.0 Rating</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="reveal">
+                <h2 class="font-display text-5xl md:text-6xl font-bold text-gray-900 mb-8">
+                    Ready to Grow Your Real Estate Business?
+                </h2>
+                <p class="text-xl text-gray-600 mb-16">
+                    Join 150+ successful agents who trust Ohana to generate leads and sell properties faster
+                </p>
+                
+                <div class="bg-gray-50 rounded-3xl p-10 shadow-xl">
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="text-left">
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:ring-2 focus:border-transparent transition-all focus-primary" placeholder="Your Name">
+                            </div>
+                            <div class="text-left">
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                                <input type="email" class="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:ring-2 focus:border-transparent transition-all focus-primary" placeholder="your@email.com">
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="text-left">
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" class="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:ring-2 focus:border-transparent transition-all focus-primary" placeholder="(555) 123-4567">
+                            </div>
+                            <div class="text-left">
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Brokerage/Company</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:ring-2 focus:border-transparent transition-all focus-primary" placeholder="Your Brokerage">
+                            </div>
+                        </div>
+                        <div class="text-left">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Primary Market Area</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:ring-2 focus:border-transparent transition-all focus-primary" placeholder="City, State">
+                        </div>
+                        <div class="text-left">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">What's your biggest challenge?</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:ring-2 focus:border-transparent transition-all resize-none focus-primary" placeholder="Tell us about your current marketing challenges and goals..."></textarea>
+                        </div>
+                        <button type="button" onclick="submitContactForm()" class="w-full btn-primary text-white px-8 py-4 rounded-2xl font-semibold shadow-lg hover:shadow-xl">
+                            Get My Free Marketing Analysis
+                        </button>
+                    </form>
+                    
+                    <div id="contact-success" class="hidden text-center">
+                        <div class="text-6xl mb-6">🏠</div>
+                        <h3 class="font-display text-3xl font-semibold text-gray-900 mb-4">Thank You!</h3>
+                        <p class="text-gray-600 mb-6">
+                            We've received your information and will contact you within 24 hours with a 
+                            personalized marketing analysis for your market area.
+                        </p>
+                        <p class="text-sm text-gray-500">
+                            In the meantime, check out our success stories and follow us on social media 
+                            for daily real estate marketing tips.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="mt-16 grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-lg" style="background-color: #da795e;">
+                            <span class="text-2xl text-white">📧</span>
+                        </div>
+                        <h4 class="font-semibold mb-2">Email Us</h4>
+                        <p class="text-gray-600">hello@ohanarealestate.com</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-lg" style="background-color: #da795e;">
+                            <span class="text-2xl text-white">📞</span>
+                        </div>
+                        <h4 class="font-semibold mb-2">Call Us</h4>
+                        <p class="text-gray-600">(808) 555-HOMES</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-lg" style="background-color: #da795e;">
+                            <span class="text-2xl text-white">🏝️</span>
+                        </div>
+                        <h4 class="font-semibold mb-2">Visit Us</h4>
+                        <p class="text-gray-600">Honolulu, Hawaii</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 px-6 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 rounded-2xl flex items-center justify-center">
+                            <img src="logo.png" alt="Ohana Logo" class="w-12 h-12 object-contain">
+                        </div>
+                        <div>
+                            <div class="font-display text-2xl font-semibold">Ohana</div>
+                            <div class="text-sm text-gray-400">Real Estate Marketing</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Helping real estate professionals sell more properties through proven digital marketing strategies. 
+                        Join the Ohana family and grow your business today.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
+                            <span class="text-sm">📘</span>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
+                            <span class="text-sm">📷</span>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
+                            <span class="text-sm">💼</span>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
+                            <span class="text-sm">📺</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Lead Generation</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Social Media Marketing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Website Development</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Email Marketing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Video Marketing</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Success Stories</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Market Reports</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Marketing Tips</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Free Tools</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Ohana Real Estate Marketing. All rights reserved. Licensed in Hawaii & California.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Navigation smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Contact form submission
+        function submitContactForm() {
+            const form = document.querySelector('#contact form');
+            const successMessage = document.getElementById('contact-success');
+            
+            form.style.display = 'none';
+            successMessage.classList.remove('hidden');
+        }
+
+
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all reveal elements
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97f37115d296e28c',t:'MTc1Nzg5MDIxMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
